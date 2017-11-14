@@ -1,0 +1,44 @@
+
+body {
+	font-family: 'Kalam', cursive;
+	background: url(http://bemawu.org.za/wp-content/uploads/2016/07/background.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+
+.title {
+	text-align: center;
+}
+
+.container {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.row {
+	margin-top: 50px;
+}
+
+.correct {
+	color: #00802b;
+}
+
+.incorrect {
+	color: #cc0000;
+
+}
+
+.col-sm-3 {
+
+  left: 60px;
+  top: 10px;
+
+}
+
+h1 {
+	text-align: left;
+}
+
+h1.correct,
+	h1.incorrect {
+		width: 270px;
+	}

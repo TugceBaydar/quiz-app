@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+
+ </head>
+
+  <body>
+
+    <div class="container">
+        <h1 class="title">Quiz App</h1>
+      <div class="row">
+        <form class="col-sm-7">
+          <div class="form-group">
+            <div id="q0">What is the population of California ?</div>
+              <input id="a0" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+            <div id="q1">Who wrote the book that is called Plague</div>
+              <input id="a1" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div id="q2">What is the population of San Francisco ?</div>
+              <input id="a2" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div id="q3">Who said the saying of What doesnt kill you makes you stronger?</div>
+              <input id="a3" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div id="q4">Who wrote the book that is called The Stranger ?</div>
+              <input id="a4" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div id="q5">Where is Turkey in the earth map ?</div>
+              <input id="a5" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div id="q6">What language is spoken in Turkey ?</div>
+              <input id="a6" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div id="q7">What language is this "es un camino va a una nueva vida"</div>
+              <input id="a7" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div id="q8">What is the secret of happiness?</div>
+              <input id="a8" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div id="q9">Are you with your life ?</div>
+              <input id="a9" type="text" class="form-control">
+            </div>
+
+
+            <button type="button" onclick="result()" class="btn btn-info">Check Results</button>
+        </form>
+
+            <div class="col-sm-3">
+                <h1 class="correct">
+                  Correct:  <span id="correct"></span>
+                </h1>
+                <h1 class="incorrect">
+                  Incorrect:  <span id="incorrect"></span>
+                </h1>
+            </div>
+          </div>
+        </div>
+
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+   </body>
+
+</html>
