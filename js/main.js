@@ -2,7 +2,10 @@
 // your time is up im sorry,
 // what is the song that youre listening ?
 // can i create an array of the answer for exm ['yes', 'no']
-// put a level to pass the quiz and have it to do something !
+
+
+
+
 
 var questions = [
   {
@@ -10,23 +13,23 @@ var questions = [
      answer: '39 million'
   },
   {
-     question: 'Who wrote the book that is called Plague ?',
+     question: 'Who was the book Plague written by?',
      answer: 'albert camus'
   },
   {
-     question: 'What is the population of San Francisco ?',
-     answer: '860.000'
+     question: 'What is the song you are listening ?',
+     answer:'kldnk'
   },
   {
-     question: 'Who said the saying of What doesnt kill you makes you stronger?',
+     question: 'Who said "What doesnt kill you makes you stronger?"',
      answer: 'Nietzsche'
   },
   {
-     question: 'Who wrote the book that is called The Stranger ?',
+     question: 'Who was the book The Stranger written by?',
      answer: 'Albert Camus'
   },
   {
-     question: 'Where is Turkey in the earth map ?',
+     question: 'Where is Turkey on the map ?',
      answer: 'Eurasia'
   },
   {
@@ -38,13 +41,13 @@ var questions = [
      answer: 'spanish'
   },
   {
-     question: 'What is the secret of happiness?',
-     answer: 'Patient'   //create an alert here
+    question: '2 + 2 ?',
+    answer: '4'
   },
   {
-     question: 'Are you happy with your life ?',
-     answer: 'Yes'
-  },
+     question: 'What is the secret of happiness?',
+     answer: 'Patient'   //create an alert here
+  }
 ]
 
  for(var i = 0; i < questions.length; i++) {
@@ -82,8 +85,21 @@ function result() {
 
       incorrect++
     }
+    //  setInterval(5000)
+     //
+
+
   }
+        if(correct >= 5) {
+          alert("you passed the quiz !")
+        } else {
+          alert("im sorry !!")
+        }
+
   document.getElementById('correct').textContent = correct
   document.getElementById('incorrect').textContent = incorrect
+
+
+
 
 }
