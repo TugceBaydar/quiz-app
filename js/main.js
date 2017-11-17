@@ -1,11 +1,3 @@
-// if its yes answer the next question,
-// your time is up im sorry,
-// what is the song that youre listening ?
-// can i create an array of the answer for exm ['yes', 'no']
-
-
-
-
 
 var questions = [
   {
@@ -46,10 +38,10 @@ var questions = [
   },
   {
      question: 'What is the secret of happiness?',
-     answer: 'Patient'   //create an alert here
+     answer: 'Patient'  
   }
 ]
-
+ //identfying questions
  for(var i = 0; i < questions.length; i++) {
 
     var q = questions[i].question
@@ -85,11 +77,12 @@ function result() {
 
       incorrect++
     }
-    //  setInterval(5000)
-     //
+
 
 
   }
+
+// level of passing the quiz
         if(correct >= 5) {
           alert("you passed the quiz !")
         } else {
@@ -103,3 +96,23 @@ function result() {
 
 
 }
+
+ // if you cant answer in 5 seconds you ll not be able to pass the next question
+
+var y = document.getElementsByTagName('input')
+
+for(var i=1; i<y.length; i++) {
+
+  y[i].setAttribute('disabled', true)
+}
+
+  var counter = 0  // a varibable to count correct questions answered in 5 seconds
+setInterval(function(){
+  y[counter].removeAttribute('disabled')
+  if(counter>0) {
+  y[counter-1].setAttribute('disabled', true) // to disable the previos question again
+}
+  counter++
+},3000
+
+)
