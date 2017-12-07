@@ -9,7 +9,7 @@ var questions = [
      answer: 'albert camus'
   },
   {
-     question: 'What is the song you are listening ?',
+     question: 'What is the song you are listening to?',
      answer:'kldnk'
   },
   {
@@ -38,7 +38,7 @@ var questions = [
   },
   {
      question: 'What is the secret of happiness?',
-     answer: 'Patient'  
+     answer: 'Patient'
   }
 ]
  //identfying questions
